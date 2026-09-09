@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腐脸-了解面部皮肤问题与专业护理指南</title>
+    <meta name="description" content="腐脸是面部皮肤严重感染、溃烂或坏死的俗称，本页提供腐脸的成因分析、症状识别、科学处理步骤与日常护理建议，帮助您正确应对皮肤问题。">
+    <meta name="keywords" content="腐脸,面部皮肤感染,皮肤溃烂,脸部坏死,皮肤护理,皮肤科">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: #f8f6f2;
+            color: #2e2a26;
+            line-height: 1.7;
+        }
+        a {
+            color: #b85c38;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .site-header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #eee5dd;
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #b85c38, #8c3a1e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2e2a26;
+            letter-spacing: 1px;
+        }
+        .logo-text span {
+            color: #b85c38;
+        }
+        .header-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 26px;
+            flex-wrap: wrap;
+        }
+        .header-nav a {
+            font-weight: 500;
+            color: #4a3f38;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .header-nav a:hover,
+        .header-nav a.active {
+            color: #b85c38;
+            border-bottom-color: #b85c38;
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #f0e7df 0%, #faf6f1 100%);
+            padding: 70px 0 60px;
+            border-bottom: 1px solid #e8ddd2;
+        }
+        .hero-content {
+            max-width: 800px;
+        }
+        .hero h1 {
+            font-size: 40px;
+            line-height: 1.25;
+            margin-bottom: 22px;
+            color: #2e2a26;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .hero h1 .accent {
+            color: #b85c38;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #5a4e46;
+            margin-bottom: 26px;
+            max-width: 680px;
+        }
+        .hero-cta {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+        .btn-primary {
+            background-color: #b85c38;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #9e4a2a;
+            text-decoration: none;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(184,92,56,0.25);
+        }
+        .btn-outline {
+            background-color: transparent;
+            border-color: #b85c38;
+            color: #b85c38;
+        }
+        .btn-outline:hover {
+            background-color: #b85c38;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Section styles */
+        .section {
+            padding: 70px 0;
+        }
+        .section-alt {
+            background-color: #fff;
+        }
+        .section-title {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 12px;
+            color: #2e2a26;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: #7a6c60;
+            margin-bottom: 45px;
+            font-size: 16px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Card grid for causes */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 28px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 16px;
+            padding: 32px 28px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+            border: 1px solid #eee5dd;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .card-icon {
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #3a322c;
+        }
+        .card p {
+            color: #5f554e;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .card ul {
+            margin-top: 10px;
+            padding-left: 18px;
+            color: #5f554e;
+            font-size: 14px;
+        }
+
+        /* Steps */
+        .steps-list {
+            counter-reset: step;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .step-item {
+            counter-increment: step;
+            background: #faf6f2;
+            border-radius: 14px;
+            padding: 28px 32px 28px 90px;
+            position: relative;
+            margin-bottom: 20px;
+            border-left: 4px solid #b85c38;
+        }
+        .step-item::before {
+            content: counter(step);
+            position: absolute;
+            left: 24px;
+            top: 28px;
+            width: 48px;
+            height: 48px;
+            background: #b85c38;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .step-item h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #3a322c;
+        }
+        .step-item p {
+            color: #5f554e;
+            font-size: 15px;
+        }
+
+        /* Warning box */
+        .warning-box {
+            background-color: #fff7f0;
+            border: 2px solid #d96c3c;
+            border-radius: 14px;
+            padding: 30px 34px;
+            margin: 50px 0 30px;
+            box-shadow: 0 4px 16px rgba(217,108,60,0.12);
+        }
+        .warning-box h3 {
+            color: #b04a1e;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .warning-box p {
+            color: #5a3e2e;
+            font-size: 15px;
+        }
+
+        /* Two column layout for care */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .care-block {
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px 36px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+            border: 1px solid #eee5dd;
+        }
+        .care-block h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #2e2a26;
+            border-bottom: 3px solid #f0e0d6;
+            padding-bottom: 12px;
+        }
+        .care-block ul {
+            list-style: none;
+            padding: 0;
+        }
+        .care-block li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #4a4038;
+            font-size: 15px;
+            border-bottom: 1px dashed #f0e8e0;
+        }
+        .care-block li:last-child {
+            border-bottom: none;
+        }
+        .care-block li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #b85c38;
+            font-weight: 700;
+        }
+        .care-block li.wrong::before {
+            content: "✕";
+            color: #c0392b;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            border: 1px solid #eee5dd;
+            overflow: hidden;
+        }
+        .faq-q {
+            padding: 20px 28px;
+            font-weight: 600;
+            font-size: 17px;
+            color: #3a322c;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fcfaf8;
+        }
+        .faq-q span {
+            color: #b85c38;
+            font-size: 22px;
+            font-weight: 400;
+            transition: transform 0.2s;
+        }
+        .faq-a {
+            padding: 0 28px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: #5f554e;
+            font-size: 15px;
+            line-height: 1.8;
+            background: #fff;
+        }
+        .faq-item.open .faq-a {
+            max-height: 500px;
+            padding: 0 28px 24px;
+        }
+        .faq-item.open .faq-q span {
+            transform: rotate(45deg);
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #2e2a26;
+            color: #b8ada4;
+            padding: 40px 0 30px;
+            margin-top: 40px;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+        .footer-col p, .footer-col a {
+            color: #b8ada4;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .footer-col a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #4a4038;
+            font-size: 13px;
+            color: #8a7c70;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 50px 0 40px;
+            }
+            .hero h1 {
+                font-size: 30px;
+            }
+            .section {
+                padding: 50px 0;
+            }
+            .section-title {
+                font-size: 25px;
+            }
+            .two-col {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .header-nav {
+                width: 100%;
+                margin-top: 12px;
+            }
+            .header-nav ul {
+                gap: 16px;
+                justify-content: center;
+            }
+            .step-item {
+                padding: 24px 20px 24px 80px;
+            }
+            .step-item::before {
+                left: 16px;
+                width: 44px;
+                height: 44px;
+                font-size: 18px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 14px;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 26px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">腐</div>
+            <div class="logo-text">腐脸<span>指南</span></div>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#what" class="active">什么是腐脸</a></li>
+                <li><a href="#causes">常见原因</a></li>
+                <li><a href="#steps">处理步骤</a></li>
+                <li><a href="#care">护理与误区</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>“腐脸”并非医学诊断<br>而是<span class="accent">面部皮肤严重损伤</span>的警示</h1>
+            <p>当面部皮肤出现溃烂、感染或组织坏死时，民间常以“腐脸”形容。这背后可能涉及感染、外伤、免疫问题或慢性疾病。正确认识、及时就医、科学护理，是避免情况恶化的关键。</p>
+            <div class="hero-cta">
+                <a href="#steps" class="btn btn-primary">查看紧急处理步骤</a>
+                <a href="#causes" class="btn btn-outline">了解可能成因</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is 腐脸 -->
+    <section class="section section-alt" id="what">
+        <div class="container">
+            <h2 class="section-title">“腐脸”到底指什么？</h2>
+            <p class="section-subtitle">它不是正式疾病名称，而是一个描述严重面部皮肤状态的通俗说法</p>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🦠</div>
+                    <h3>感染性溃烂</h3>
+                    <p>细菌、真菌或病毒感染导致皮肤组织破坏，出现红肿、化脓、坏死，常见于未及时处理的伤口或免疫力低下人群。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚠️</div>
+                    <h3>组织坏死</h3>
+                    <p>皮肤深层组织因缺血、外伤或严重感染而坏死，表现为局部发黑、恶臭、失去知觉，需要立即医疗干预。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🧬</div>
+                    <h3>慢性皮肤疾病</h3>
+                    <p>某些慢性皮肤病如坏疽性脓皮病、严重湿疹继发感染等，在控制不佳时可能出现类似“腐脸”的严重症状。</p>
+                </div>
+            </div>
+            <div class="warning-box">
+                <h3>重要警示</h3>
+                <p>如果你或身边人的面部出现大面积溃烂、颜色发黑、流出异味分泌物或伴随发热，请立即前往正规医院皮肤科或急诊科就诊。<strong>腐脸绝不是可以自行处理或拖延的小问题</strong>，延误治疗可能导致永久性疤痕、面部功能受损甚至危及生命。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Causes -->
+    <section class="section" id="causes">
+        <div class="container">
+            <h2 class="section-title">导致“腐脸”的常见原因</h2>
+            <p class="section-subtitle">了解根源才能针对性预防和治疗，以下是一些常见诱因</p>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🧫</div>
+                    <h3>严重细菌感染</h3>
+                    <ul>
+                        <li>金黄色葡萄球菌感染</li>
+                        <li>链球菌引起的蜂窝织炎</li>
+                        <li>绿脓杆菌感染（免疫力低下者）</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🦟</div>
+                    <h3>外伤处理不当</h3>
+                    <ul>
+                        <li>面部擦伤、割伤未及时消毒</li>
+                        <li>挤压痘痘导致深层感染</li>
+                        <li>不洁工具处理皮肤问题</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🩺</div>
+                    <h3>全身性疾病影响</h3>
+                    <ul>
+                        <li>糖尿病血糖控制不佳</li>
+                        <li>免疫缺陷或长期服用免疫抑制剂</li>
+                        <li>严重营养不良</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌡️</div>
+                    <h3>特殊感染</h3>
+                    <ul>
+                        <li>带状疱疹继发细菌感染</li>
+                        <li>深部真菌感染（罕见）</li>
+                        <li>寄生虫感染（极罕见）</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Steps -->
+    <section class="section section-alt" id="steps">
+        <div class="container">
+            <h2 class="section-title">发现“腐脸”迹象：紧急处理步骤</h2>
+            <p class="section-subtitle">在就医前或等待医生时，可以采取以下措施减少进一步伤害</p>
+            <div class="steps-list">
+                <div class="step-item">
+                    <h3>立即停止一切刺激性操作</h3>
+                    <p>不要再用手触碰、挤压、抠挖患处。停止使用任何化妆品、护肤品、药膏（除非医生开具）。用干净纱布或毛巾轻轻覆盖保护伤口区域。</p>
+                </div>
+                <div class="step-item">
+                    <h3>温和清洁（仅限表面）</h3>
+                    <p>如果伤口有明显污物，可用生理盐水轻轻冲洗表面，不要用力擦拭。没有生理盐水时，可用凉白开代替。清洁后用无菌纱布轻轻吸干水分。</p>
+                </div>
+                <div class="step-item">
+                    <h3>尽快就医</h3>
+                    <p>前往正规医院皮肤科或急诊。医生会评估是否需要清创、抗生素治疗或手术。不要自行服用抗生素，以免延误正确治疗。</p>
+                </div>
+                <div class="step-item">
+                    <h3>记录病情变化</h3>
+                    <p>用手机拍下患处照片（不同角度），记录开始时间、发展速度、疼痛程度、有无发热等。这些信息能帮助医生快速判断。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Care & Misconceptions -->
+    <section class="section" id="care">
+        <div class="container">
+            <h2 class="section-title">康复期间的护理与常见误区</h2>
+            <p class="section-subtitle">正确的护理能加速愈合、减少疤痕，而误区可能让情况雪上加霜</p>
+            <div class="two-col">
+                <div class="care-block">
+                    <h3>✅ 正确做法</h3>
+                    <ul>
+                        <li>严格遵医嘱用药，按时复查</li>
+                        <li>保持伤口清洁干燥，定期更换敷料</li>
+                        <li>饮食清淡，补充蛋白质和维生素C</li>
+                        <li>保证充足睡眠，提升免疫力</li>
+                        <li>外出戴好口罩，避免阳光直射伤口</li>
+                        <li>伤口愈合后使用医生推荐的祛疤产品</li>
+                    </ul>
+                </div>
+                <div class="care-block">
+                    <h3>❌ 常见误区</h3>
+                    <ul>
+                        <li class="wrong">用酒精、双氧水等刺激性液体反复清洗</li>
+                        <li class="wrong">听信偏方，涂抹牙膏、草药或不明粉末</li>
+                        <li class="wrong">用手撕掉结痂或死皮</li>
+                        <li class="wrong">认为“排脓”越多越好，自己挤压</li>
+                        <li class="wrong">症状稍有好转就自行停药</li>
+                        <li class="wrong">觉得不疼了就等于痊愈，忽视复查</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+        <div class="container">
+            <h2 class="section-title">关于“腐脸”的常见问题</h2>
+            <p class="section-subtitle">以下是人们经常询问的一些问题，希望能消除您的疑虑</p>
+            <div class="faq-list">
+                <div class="faq-item open">
+                    <div class="faq-q">“腐脸”会传染吗？<span>+</span></div>
+                    <div class="faq-a">这取决于具体病因。如果是细菌或病毒感染引起的溃烂，接触伤口分泌物可能传播病原体，具有一定传染性。如果是自身免疫性疾病或代谢问题导致的，则不具备传染性。无论如何，在未明确诊断前，应避免与他人共用毛巾、餐具，并注意手部卫生。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">腐脸治疗后一定会留疤吗？<span>+</span></div>
+                    <div class="faq-a">不一定。是否留疤与损伤深度、感染严重程度、治疗及时性以及个人体质有关。浅表感染且治疗及时，可能只留下轻微色沉，随时间淡化。深层组织坏死则几乎必然留下疤痕。现代医学通过美容缝合、激光、硅胶贴等手段可以明显改善疤痕外观，但完全恢复如初较难。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">可以用抗生素软膏自行处理吗？<span>+</span></div>
+                    <div class="faq-a">不建议。市面上的抗生素软膏种类繁多，针对的细菌谱不同。错误使用不仅无效，还可能诱导细菌耐药。更关键的是，“腐脸”可能涉及多种病原体或非感染性因素，外用抗生素无法解决根本问题。必须由医生诊断后开具处方。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">吃什么食物有助于恢复？<span>+</span></div>
+                    <div class="faq-a">在治疗期间，建议摄入高蛋白食物（鱼、瘦肉、蛋、豆制品）、富含维生素C的水果（猕猴桃、橙子）、富含锌的食物（坚果、贝类）。避免辛辣刺激食物、酒精和过度甜食，这些可能加重炎症反应。具体饮食方案可咨询医生或营养师。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">如何预防面部皮肤严重感染？<span>+</span></div>
+                    <div class="faq-a">日常预防包括：不随意挤压面部痘痘（尤其是危险三角区）；保持皮肤清洁但不过度清洁；使用工具（如粉刺针）前严格消毒；有糖尿病等慢性病者要控制好基础疾病；出现小伤口时用碘伏或生理盐水正确消毒并覆盖；免疫力低下人群避免去人群密集的封闭环境。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>腐脸指南</h4>
+                <p>专注于面部皮肤严重损伤的科普与护理建议，帮助您科学应对皮肤危机。</p>
+            </div>
+            <div class="footer-col">
+                <h4>重要提醒</h4>
+                <p>本站内容仅供科普参考，不能替代专业医疗诊断。如有皮肤问题请及时就医。</p>
+            </div>
+            <div class="footer-col">
+                <h4>相关资源</h4>
+                <a href="#what">什么是腐脸</a>
+                <a href="#causes">常见原因</a>
+                <a href="#steps">紧急处理</a>
+                <a href="#faq">常见问题</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 腐脸指南 | 科学护肤 · 理性就医 · 健康生活</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // FAQ accordion functionality
+    document.querySelectorAll('.faq-q').forEach(function(q) {
+        q.addEventListener('click', function() {
+            var item = this.parentElement;
+            var wasOpen = item.classList.contains('open');
+            // Close all items
+            document.querySelectorAll('.faq-item').forEach(function(i) {
+                i.classList.remove('open');
+            });
+            // Toggle clicked item
+            if (!wasOpen) {
+                item.classList.add('open');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
