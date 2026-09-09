@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火车游戏-热门铁路模拟游戏推荐与下载指南</title>
+    <meta name="description" content="探索火车游戏世界，了解铁路模拟、火车驾驶、策略经营等类型游戏。提供热门火车游戏推荐、玩法介绍、新手入门指南及常见问题解答，助您找到心仪的火车游戏。">
+    <meta name="keywords" content="火车游戏,火车模拟游戏,铁路游戏,火车驾驶游戏,火车游戏推荐,模拟火车,火车游戏下载">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #f0f4f8;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部 */
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #2d5a87 100%);
+            color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        .logo span {
+            color: #fbbf24;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav a:hover {
+            background: rgba(255,255,255,0.15);
+            color: #fbbf24;
+        }
+
+        /* 首屏 Hero */
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #1e3a5f);
+            color: white;
+            padding: 70px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "🚂";
+            position: absolute;
+            font-size: 300px;
+            opacity: 0.08;
+            right: -30px;
+            top: -40px;
+            transform: rotate(15deg);
+        }
+
+        .hero::after {
+            content: "🛤️";
+            position: absolute;
+            font-size: 180px;
+            opacity: 0.06;
+            left: 20px;
+            bottom: -30px;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #cbd5e1;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: #fbbf24;
+            color: #0f172a;
+        }
+
+        .btn-primary:hover {
+            background: #f59e0b;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(251,191,36,0.4);
+        }
+
+        .btn-outline {
+            border-color: #ffffff;
+            color: #ffffff;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-3px);
+        }
+
+        /* 栏目通用 */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #0f172a;
+            position: relative;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-size: 1rem;
+        }
+
+        /* 分类卡片 */
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .cat-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 30px 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #2d5a87;
+        }
+
+        .cat-card:nth-child(2) { border-top-color: #fbbf24; }
+        .cat-card:nth-child(3) { border-top-color: #10b981; }
+        .cat-card:nth-child(4) { border-top-color: #f97316; }
+
+        .cat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+
+        .cat-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .cat-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+
+        .cat-card p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* 热门游戏卡片 */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .game-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .game-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+
+        .game-img {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .img-1 { background: linear-gradient(135deg, #2d5a87, #4a90b8); }
+        .img-2 { background: linear-gradient(135deg, #1e3a5f, #2d5a87); }
+        .img-3 { background: linear-gradient(135deg, #3b7a57, #5a9e7e); }
+        .img-4 { background: linear-gradient(135deg, #7a3b3b, #a05a5a); }
+        .img-5 { background: linear-gradient(135deg, #6b3b7a, #8e5aa0); }
+        .img-6 { background: linear-gradient(135deg, #b8860b, #d4a017); }
+
+        .game-body {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .game-body h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: #0f172a;
+        }
+
+        .game-body .meta {
+            color: #94a3b8;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+        }
+
+        .game-body p {
+            color: #475569;
+            font-size: 0.95rem;
+            flex: 1;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e2e8f0;
+            color: #475569;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 8px 4px 0 0;
+        }
+
+        /* 游戏玩法与技巧 */
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .tip-item {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid #2d5a87;
+        }
+
+        .tip-item:nth-child(2) { border-left-color: #fbbf24; }
+        .tip-item:nth-child(3) { border-left-color: #10b981; }
+        .tip-item:nth-child(4) { border-left-color: #f97316; }
+        .tip-item:nth-child(5) { border-left-color: #8b5cf6; }
+        .tip-item:nth-child(6) { border-left-color: #ec4899; }
+
+        .tip-item h3 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+
+        .tip-item p {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        /* 新手入门步骤 */
+        .steps {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .step:last-child { margin-bottom: 0; }
+
+        .step-num {
+            width: 50px;
+            height: 50px;
+            background: #2d5a87;
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+            color: #0f172a;
+        }
+
+        .step-content p {
+            color: #475569;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            padding: 20px 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+
+        .faq-item h3 {
+            font-size: 1.05rem;
+            color: #0f172a;
+            margin-bottom: 8px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item h3::after {
+            content: "+";
+            font-size: 1.5rem;
+            color: #2d5a87;
+            font-weight: 400;
+        }
+
+        .faq-item p {
+            color: #475569;
+            font-size: 0.95rem;
+            padding-top: 8px;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        /* 安全提示 */
+        .safety {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            border-radius: 20px;
+            padding: 40px;
+            color: #0f172a;
+        }
+
+        .safety h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .safety ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .safety li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 500;
+        }
+
+        .safety li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0f172a;
+            font-weight: bold;
+        }
+
+        /* 页脚 */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 40px 0 30px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        .footer a:hover { color: #fbbf24; }
+
+        .footer-links {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer p {
+            font-size: 0.85rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                padding: 0 20px;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .game-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+                padding: 25px;
+            }
+
+            .safety {
+                padding: 25px;
+            }
+
+            .btn {
+                padding: 12px 28px;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cat-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+
+            .cat-card {
+                padding: 20px 15px;
+            }
+
+            .cat-icon {
+                font-size: 2.2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.7rem;
+            }
+
+            .step {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+    <!-- 头部 -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <h1>🚂 火车游戏<span>站</span></h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#hot">热门游戏</a></li>
+                    <li><a href="#category">游戏分类</a></li>
+                    <li><a href="#guide">新手入门</a></li>
+                    <li><a href="#tips">玩法技巧</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 首屏 -->
+    <section class="hero">
+        <div class="container">
+            <h2>开启你的铁路之旅</h2>
+            <p>从模拟驾驶到铁路经营，从复古蒸汽机车到现代高速列车，火车游戏带你体验铁道世界的无限魅力。这里汇集了最全面的火车游戏信息和实用指南。</p>
+            <div class="btn-group">
+                <a href="#hot" class="btn btn-primary">浏览热门游戏</a>
+                <a href="#guide" class="btn btn-outline">新手入门指南</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 游戏分类 -->
+    <section class="section" id="category">
+        <div class="container">
+            <h2 class="section-title">火车游戏分类</h2>
+            <p class="section-subtitle">不同类型的火车游戏满足不同玩家的喜好，找到最适合你的那一款</p>
+            <div class="cat-grid">
+                <div class="cat-card">
+                    <div class="cat-icon">🕹️</div>
+                    <h3>模拟驾驶类</h3>
+                    <p>高度还原真实火车驾驶体验，从启动到制动，感受操控火车的每一处细节。适合追求真实感的玩家。</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-icon">🏗️</div>
+                    <h3>策略经营类</h3>
+                    <p>规划铁路线路，管理车站资源，发展运输网络，打造属于自己的铁路商业帝国。考验你的经营头脑。</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-icon">🧩</div>
+                    <h3>沙盒建造类</h3>
+                    <p>自由建设铁路系统，铺设轨道、设计车站、布置景观，发挥无穷创意，打造理想中的铁路世界。</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-icon">🎢</div>
+                    <h3>休闲益智类</h3>
+                    <p>轻松愉快的玩法，适合碎片时间娱乐。解谜、消除、接驳等多样玩法，全家人都能享受乐趣。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门游戏推荐 -->
+    <section class="section" id="hot" style="background: #e9eef3;">
+        <div class="container">
+            <h2 class="section-title">热门火车游戏推荐</h2>
+            <p class="section-subtitle">精选广受好评的火车游戏，涵盖不同平台和玩法风格</p>
+            <div class="game-grid">
+                <div class="game-card">
+                    <div class="game-img img-1">🚄</div>
+                    <div class="game-body">
+                        <h3>模拟火车世界</h3>
+                        <div class="meta">模拟驾驶 · 多平台</div>
+                        <p>高度拟真的火车驾驶模拟游戏，拥有多条真实线路和多种机车，从通勤列车到货运机车，体验不同铁路环境下的驾驶乐趣。</p>
+                        <span class="tag">真实驾驶</span>
+                        <span class="tag">高清画质</span>
+                        <span class="tag">DLC丰富</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-img img-2">🏭</div>
+                    <div class="game-body">
+                        <h3>铁路帝国</h3>
+                        <div class="meta">策略经营 · 单机/多人</div>
+                        <p>在工业革命时代建立自己的铁路公司，连接城市、运输物资、优化线路，与竞争对手展开激烈的商业博弈。</p>
+                        <span class="tag">经营管理</span>
+                        <span class="tag">历史背景</span>
+                        <span class="tag">深度策略</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-img img-3">🛤️</div>
+                    <div class="game-body">
+                        <h3>铁路建设者</h3>
+                        <div class="meta">沙盒建造 · 创意玩法</div>
+                        <p>自由铺设铁轨、建造车站、美化环境，从零开始打造属于你的铁路小镇。轻松休闲，创意无限。</p>
+                        <span class="tag">自由建造</span>
+                        <span class="tag">画面清新</span>
+                        <span class="tag">创意工坊</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-img img-4">🛤️</div>
+                    <div class="game-body">
+                        <h3>运输大亨</h3>
+                        <div class="meta">策略经营 · PC平台</div>
+                        <p>经典的运输模拟经营游戏，铁路只是起点，你可以拓展公路、海运、空运等多种运输方式，构建庞大的运输网络。</p>
+                        <span class="tag">经典系列</span>
+                        <span class="tag">复合运输</span>
+                        <span class="tag">自由经济</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-img img-5">🎮</div>
+                    <div class="game-body">
+                        <h3>火车山谷</h3>
+                        <div class="meta">休闲益智 · 全平台</div>
+                        <p>在美丽的山谷之间修建铁路，运送乘客和货物。玩法简单易上手，关卡设计巧妙，适合所有年龄段的玩家。</p>
+                        <span class="tag">轻松上手</span>
+                        <span class="tag">关卡丰富</span>
+                        <span class="tag">治愈画风</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-img img-6">🚂</div>
+                    <div class="game-body">
+                        <h3>蒸汽世界</h3>
+                        <div class="meta">模拟经营 · 独立游戏</div>
+                        <p>操控复古蒸汽火车穿越奇幻世界，在途中收集资源、升级机车、解锁新路线，体验独特的冒险之旅。</p>
+                        <span class="tag">蒸汽朋克</span>
+                        <span class="tag">冒险元素</span>
+                        <span class="tag">独特美术</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新手入门指南 -->
+    <section class="section" id="guide">
+        <div class="container">
+            <h2 class="section-title">火车游戏新手入门指南</h2>
+            <p class="section-subtitle">第一次接触火车游戏？以下步骤帮你快速找到适合自己的游戏并顺利上手</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h3>明确你的兴趣方向</h3>
+                        <p>先想清楚自己喜欢什么样的玩法。喜欢真实操作可以选择模拟驾驶类；喜欢规划和策略可以尝试经营类；喜欢轻松娱乐则可以关注休闲益智类。明确偏好能大大缩小选择范围。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h3>考虑设备平台</h3>
+                        <p>不同火车游戏支持的平台不同。PC平台游戏选择最丰富，主机平台体验流畅，移动端则方便随时随地游玩。根据你手头的设备来筛选合适的游戏。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h3>查看游戏评价和试玩视频</h3>
+                        <p>在决定购买或下载前，多看看玩家的真实评价和游戏试玩视频。这样可以直观了解游戏画面、操作手感和实际玩法，避免踩坑。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <h3>从入门内容开始体验</h3>
+                        <p>许多火车游戏都内置了教学关卡或新手模式。建议先从这些内容开始，熟悉基本操作和游戏机制，再逐步挑战更复杂的内容，获得更好的游戏体验。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">5</div>
+                    <div class="step-content">
+                        <h3>加入社区交流学习</h3>
+                        <p>火车游戏社区中有大量热心玩家和资深爱好者。加入相关论坛或社群，可以获取路线攻略、mod推荐、问题解答等宝贵资源，让你的游戏体验更加丰富。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 玩法技巧 -->
+    <section class="section" id="tips" style="background: #e9eef3;">
+        <div class="container">
+            <h2 class="section-title">火车游戏玩法与实用技巧</h2>
+            <p class="section-subtitle">无论你是新手还是老玩家，这些技巧都能帮助你更好地享受火车游戏</p>
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <h3>📊 规划先行</h3>
+                    <p>在经营类火车游戏中，不要急于铺设大量轨道。先分析城市间的运输需求，合理规划主干线路，确保初期资金能够稳定回笼，再逐步扩展网络。</p>
+                </div>
+                <div class="tip-item">
+                    <h3>⚙️ 熟悉信号系统</h3>
+                    <p>模拟驾驶类游戏中，信号系统是保证行车安全的关键。花时间学习不同信号灯的含义，掌握正确的制动时机，能让你避免许多不必要的失误。</p>
+                </div>
+                <div class="tip-item">
+                    <h3>🚆 车型选择有讲究</h3>
+                    <p>不同机车适用于不同场景。短途客运选轻快灵活的动车组，重载货运则需要大功率机车。了解各车型的特点和适用场景，能显著提升运输效率。</p>
+                </div>
+                <div class="tip-item">
+                    <h3>🔄 关注游戏更新</h3>
+                    <p>优秀的火车游戏会持续推出更新和DLC内容。定期关注官方动态，及时获取新线路、新车型和功能改进，保持游戏体验的新鲜感。</p>
+                </div>
+                <div class="tip-item">
+                    <h3>🎨 善用创意工坊</h3>
+                    <p>支持mod的游戏可以通过创意工坊获取海量玩家自制内容，包括新涂装、新机车、新场景等。善用这些资源可以极大丰富你的游戏世界。</p>
+                </div>
+                <div class="tip-item">
+                    <h3>📈 循序渐进挑战</h3>
+                    <p>不要一开始就挑战高难度内容。先从简单的任务或短线路开始，逐步积累经验和资金，再向更复杂的运营场景发起挑战，这样更容易获得成就感。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="section-title">火车游戏常见问题解答</h2>
+            <p class="section-subtitle">整理玩家最常遇到的问题，帮你快速找到答案</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>火车游戏一般对电脑配置要求高吗？</h3>
+                    <p>不同游戏配置要求差异较大。大型3D模拟驾驶类游戏（如模拟火车世界）需要较好的显卡和处理器；而2D经营类或休闲类游戏则对配置要求很低。建议在购买前查看游戏的推荐配置说明。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>手机上有好玩的火车游戏吗？</h3>
+                    <p>手机平台也有不少优秀的火车游戏，如火车山谷手机版、模拟火车手机版等。移动端游戏在操作上做了优化，适合利用碎片时间游玩，但整体拟真度和内容深度通常不及PC版本。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>哪些火车游戏适合孩子玩？</h3>
+                    <p>休闲益智类和沙盒建造类火车游戏比较适合儿童，比如火车山谷、铁路建设者等。这些游戏画面明快、操作简单、没有暴力内容，还能培养逻辑思维和创造力。建议家长根据游戏年龄评级进行选择。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>火车游戏有线上多人模式吗？</h3>
+                    <p>部分火车游戏支持多人联机，例如铁路帝国的多人模式、模拟火车世界在部分平台也支持在线协作。不过大多数火车游戏仍以单人体验为核心。联机玩法通常以合作经营或共同驾驶为主。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>玩火车游戏需要学习专业铁路知识吗？</h3>
+                    <p>不需要。虽然模拟驾驶类游戏会涉及一些真实的铁路操作知识，但游戏内通常都有教程引导。新手可以从简单模式入手，在游戏过程中自然地了解相关知识。这恰恰也是火车游戏的魅力之一。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>如何选择适合自己的第一款火车游戏？</h3>
+                    <p>建议先评估自己对真实度、策略深度、画面表现等方面的偏好，再结合设备条件进行选择。如果还不确定，可以先尝试一些免费试玩版或入门级作品，确认自己真正喜欢后再投入更多时间和预算。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 安全提示 -->
+    <section class="section">
+        <div class="container">
+            <div class="safety">
+                <h3>🛡️ 游戏下载与游玩安全提示</h3>
+                <ul>
+                    <li>请从官方应用商店、Steam等正规平台下载游戏，避免使用来路不明的破解版本</li>
+                    <li>注意查看游戏年龄评级，选择适合自身年龄的内容</li>
+                    <li>合理安排游戏时间，注意劳逸结合，保护视力健康</li>
+                    <li>在游戏社区交流时注意保护个人隐私，不轻易透露真实信息</li>
+                    <li>购买DLC或游戏内道具前，仔细确认价格和内容，理性消费</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#category">游戏分类</a>
+                <a href="#hot">热门推荐</a>
+                <a href="#guide">新手入门</a>
+                <a href="#faq">常见问题</a>
+            </div>
+            <p>© 2024 火车游戏站 · 提供火车游戏资讯与指南 · 本网站内容仅供参考</p>
+        </div>
+    </footer>
+
+</body>
+</html>
